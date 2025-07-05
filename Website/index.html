@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <style>
-    body, h1, h2, h3, h4, h5, h6 {
+    body,h1,h2,h3,h4,h5,h6 {
       font-family: "Lato", sans-serif;
     }
     body, html {
@@ -29,15 +28,15 @@
       height: 80%;
     }
     .bgimg-2 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("Images/lab.jpg");
+      background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url("Images/lab.jpg");
       min-height: 400px;
     }
     .bgimg-3 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("Images/Publication.jpg");
+      background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url("Images/Publication.jpg");
       min-height: 400px;
     }
     .bgimg-4 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("Images/Nature1.jpg");
+      background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url("Images/Nature1.jpg");
       min-height: 400px;
     }
     .hero-text {
@@ -100,22 +99,206 @@
         margin-bottom: 20px;
       }
     }
-    aside {
-      float: right;
-      width: 25%;
-      margin-bottom: 5%;
-    }
-    .equal-height {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-    }
   </style>
 </head>
 <body>
 
-<!-- Existing content up to Publications remains unchanged -->
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+       href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#publications" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paper-plane"></i> PUBLICATIONS</a>
+    <a href="#social" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-twitter"></i> SOCIAL</a>
+  </div>
+
+  <!-- Responsive Menu -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#publications" class="w3-bar-item w3-button" onclick="toggleFunction()">PUBLICATIONS</a>
+    <a href="#social" class="w3-bar-item w3-button" onclick="toggleFunction()">SOCIAL</a>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="hero-text">
+    <h1>Hi, I’m Dr. Romila</h1>
+    <p>Welcome to my portal.</p>
+  </div>
+</div>
+<!-- About Section -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>My interest in science started gradually, but it’s been a steady source of fascination ever since.</em></p>
+
+  <p>Science first, then technology — that’s the order it’s always pulled me in, even if I didn’t realise it at first. I didn’t grow up dreaming of being a scientist (or anything in particular), but by high school, I discovered a love for science — and a knack for it too.</p>
+
+  <p>I studied Biochemistry — my second choice after missing out on Medicine, which turned out to be a blessing. I’ve never been great with blood, but I took to the lab instantly. From my first year, I volunteered in research projects, spent summers in the lab, and by graduation, I’d already been cited in my first paper.</p>
+
+  <p>That momentum carried me into a PhD in the Genetics of Healthy Human Aging at UCL. I spent four incredible years studying how genes affect longevity using fission yeast and tools like RNA and DNA sequencing. I earned my doctorate at 25 — a bit ahead of schedule, thanks to summer research, scholarships, and consistently ranking as a top student.</p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Dr Romila</b></p><br>
+      <img src="Images/Image5.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="400" height="333">
+    </div>
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <h4 class="txt-box">Welcome to my portal!</h4>
+      <p>Over time, my interests expanded beyond biology. As I moved deeper into research, I found myself increasingly drawn to the world of technology — not as a shift away from science, but as a powerful complement to it.</p>
+
+      <p>I became fascinated by how tech can help us ask better questions — and find answers faster. From the first image of a black hole to nanotech in medicine and blockchain’s evolving potential, I’ve been captivated by the pace of innovation. Tools like data analysis, computational biology, and even web development have opened new doors for how we explore and shape human health and longevity.</p>
+    </div>
+  </div>
+
+  <p class="w3-large w3-center w3-padding-16">Skills</p>
+  <p class="w3-wide"><i class="fa fa-clock-o"></i>Time Management</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-lightbulb-o"></i>Innovation & Forward Thinking</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-line-chart"></i>Analytics</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+
+  <a href="Romila_CV.pdf" target="_blank" download>
+    <button class="btn"><i class="fa fa-download"></i> Download CV</button>
+  </a>
+</div>
+
+<!-- Parallax Background for Portfolio -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">PROJECT HIGHLIGHTS</h3>
+  <p class="w3-center"><em>Here's a peek at some of the scientific adventures I've had.<br>From DNA sequencing to fly genetics, each one’s been a story of discovery.</em></p><br>
+
+  <div class="w3-row-padding w3-center">
+    <!-- Project 1 -->
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Images/Droso.jpg" alt="Drosophila Research" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Postdoctoral Fellow</b></p>
+        <p><em>Investigating neurodegeneration in lysosomal storage disorders using fruit flies.</em></p>
+        <p>Skills: Drosophila genetics, imaging, molecular biology.</p>
+        <p>Lab: Dr. Kerri Kinghorn, UCL (2019–2022)</p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Images/Microscopy2.png" alt="PhD Lifespan Study" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>PhD Project</b></p>
+        <p><em>Lifespan screening in fission yeast using barcode sequencing.</em></p>
+        <p>Skills: DNA/RNA library prep, sequencing, data analysis.</p>
+        <p>Lab: Prof. Jürg Bähler, UCL (2015–2019)</p>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Images/Rotation1_step1.png" alt="Cardiac Genomics" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>PhD Rotation 2</b></p>
+        <p><em>Studied gene regulation in developing heart tissue using Capture Hi-C.</em></p>
+        <p>Skills: Patient DNA prep, genomics, developmental biology.</p>
+        <p>Lab: Dr. Cameron Osborne, KCL (2016)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center">
+    <!-- Project 4 -->
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Images/Rotation1_2.jpg" alt="Nerve Tissue Engineering" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>PhD Rotation 1</b></p>
+        <p><em>Using microelectrode arrays to stimulate muscle via engineered nerves.</em></p>
+        <p>Skills: Neural scaffolding, electrophysiology.</p>
+        <p>Lab: Dr. James Phillips, UCL (2015)</p>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Images/UG_1.jpg" alt="Vitamin B12 Research" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Undergraduate Project</b></p>
+        <p><em>How enzymes release intermediates in cobalamin biosynthesis.</em></p>
+        <p>Skills: Protein purification, crystallisation, spectroscopy.</p>
+        <p>Lab: Prof. Richard Pickersgill, QMUL (2015)</p>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Images/Rotaxane.png" alt="Rotaxane Synthesis" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>RSC-Funded Internship</b></p>
+        <p><em>Characterising a novel rotaxane compound using EPR and voltammetry.</em></p>
+        <p>Skills: Supramolecular chemistry, CV, spectroscopy.</p>
+        <p>Lab: Dr. Maxie Roessler, QMUL (2014)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Parallax Background for Publications -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PUBLICATIONS & ACHIEVEMENTS</span>
+  </div>
+</div>
+<!-- Container (Publications Section) -->
+<div class="w3-content w3-container w3-padding-64" id="publications">
+  <p class="w3-center"><em>Some of the things I’ve published or picked up along the way.</em></p>
+  <br>
+
+  <div class="box">
+    <div class="row">
+      <!-- Publications Column -->
+      <div class="column">
+        <h4 class="w3-center"><u>Publications</u></h4>
+        <ul>
+          <li><strong>2023</strong> — Autophagic dysfunction and gut microbiota dysbiosis cause chronic immune activation in a Drosophila model of Gaucher disease. <em>PLOS Genetics</em></li>
+          <li><strong>2021</strong> — Barcode-Sequencing Screen of Fission Yeast Deletion Library for Altered Chronological Lifespan. <em>Microbial Cell</em></li>
+          <li><strong>2016</strong> — Genome size and ploidy influence angiosperm species' biomass under nitrogen and phosphorus limitation. <em>New Phytologist</em></li>
+        </ul>
+      </div>
+
+      <!-- Achievements Column -->
+      <div class="column">
+        <h4 class="w3-center"><u>Achievements</u></h4>
+        <ul>
+          <li>Level 1 Front-End Web Development (Softwire) | 2019</li>
+          <li>AFHEA – Teaching & Learning in Higher Education | 2018</li>
+          <li>Recipient of Two UCL Research Bursaries | 2018</li>
+          <li>Prize – Best Social Enterprise Project Idea | 2018</li>
+          <li>Winner – Best 3-Minute Thesis Presentation | 2017</li>
+          <li>Whittingham Prize for Academic Achievement | 2015</li>
+          <li>RSC-Sponsored Undergraduate Research Internship | 2015</li>
+          <li>Student Mentor of the Year | 2014</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Parallax Background for Social Mentions -->
 <div class="bgimg-4 w3-display-container w3-opacity-min">
@@ -123,28 +306,42 @@
     <span class="w3-xxlarge w3-text-white w3-wide">SOCIAL MENTIONS</span>
   </div>
 </div>
-
-<!-- Social Mentions Section -->
+<!-- Twitter Mentions Section -->
 <div class="w3-content w3-container w3-padding-64" id="media">
-  <h3 class="w3-center">Twitter Mentions</h3>
-  <p class="w3-center"><em>A few recent highlights shared online.</em></p><br>
+  <p class="w3-center"><em>A few highlights shared online.</em></p><br>
 
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m6 w3-padding equal-height">
+    <div class="w3-col m6 w3-padding">
       <blockquote class="twitter-tweet">
-        <p lang="en" dir="ltr">Congratulations to Dr Catalina Romila on passing her PhD viva, her examiners were Dr Elizabeth Veal (Newcastle University) and Dr Nazif Alic (UCL), and her supervisor was Prof Jürg Bähler. Dr Romila will now begin a post-doctoral project with Dr Kerri Kinghorn at the IHA. <a href="https://t.co/xWVwGO08WW">pic.twitter.com/xWVwGO08WW</a></p>&mdash; IHAatUCL (no longer posting) (@IHAatUCL) <a href="https://twitter.com/IHAatUCL/status/1194976453835841536">November 14, 2019</a>
+        <p lang="en" dir="ltr">Congratulations to Dr Catalina Romila on passing her PhD viva, her examiners were Dr Elizabeth Veal (Newcastle University) and Dr Nazif Alic (UCL), and her supervisor was Prof Jürg Bähler. Dr Romila will now begin a post-doctoral project with Dr Kerri Kinghorn at the IHA. 
+        <a href="https://t.co/xWVwGO08WW">pic.twitter.com/xWVwGO08WW</a></p>&mdash; IHAatUCL (no longer posting) (@IHAatUCL) 
+        <a href="https://twitter.com/IHAatUCL/status/1194976453835841536">November 14, 2019</a>
       </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
-    <div class="w3-col m6 w3-padding equal-height">
+    <div class="w3-col m6 w3-padding">
       <blockquote class="twitter-tweet">
-        <p lang="en" dir="ltr">Lab researchers needed to host school students from disadvantaged backgrounds for <a href="https://twitter.com/in2scienceUK">@in2scienceUK</a> scheme - <a href="https://t.co/1IlqTsBhJ9">https://t.co/1IlqTsBhJ9</a> <a href="https://t.co/G4zCHANDMw">pic.twitter.com/G4zCHANDMw</a></p>&mdash; NIHR UCLH Biomedical Research Centre (@UCLHresearch) <a href="https://twitter.com/UCLHresearch/status/971027154946412544">March 6, 2018</a>
+        <p lang="en" dir="ltr">Lab researchers needed to host school students from disadvantaged backgrounds for <a href="https://twitter.com/in2scienceUK">@in2scienceUK</a> scheme - 
+        <a href="https://t.co/1IlqTsBhJ9">https://t.co/1IlqTsBhJ9</a> 
+        <a href="https://t.co/G4zCHANDMw">pic.twitter.com/G4zCHANDMw</a></p>&mdash; NIHR UCLH Biomedical Research Centre (@UCLHresearch) 
+        <a href="https://twitter.com/UCLHresearch/status/971027154946412544">March 6, 2018</a>
       </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 </div>
 
-<!-- Twitter embed script -->
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</body>
-</html>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey">
+    <i class="fa fa-arrow-up w3-margin-right"></i>Back to Top
+  </a>
+  <div class="w3-xlarge w3-section">
+    <p class="w3-medium">Get in touch:</p>
+    <a href="https://www.facebook.com/andreea.romila.5"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/katt337/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/catalina-romila-125039153/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="https://github.com/Catalina37" target="_blank">GitHub</a></p>
+</footer>
